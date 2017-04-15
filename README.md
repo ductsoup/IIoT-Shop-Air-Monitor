@@ -37,3 +37,9 @@ S2_B               40027
 S0_STORE_CONFIG    40029
 ```
 Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
+
+## Diffusers
+The Neopixel matrix is very bright but directional. 
+
+![alt text](/images/diffuser1.jpg)
+![alt text](/images/diffuser4.jpg)
