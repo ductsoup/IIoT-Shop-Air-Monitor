@@ -36,6 +36,4 @@ S2_G               40025
 S2_B               40027
 S0_STORE_CONFIG    40029
 ```
-Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to retain those settings across power cycles.
-
-## Design Notes
+Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
