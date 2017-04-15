@@ -14,3 +14,4 @@ For under $100 the stack light can be replaced by a Neopixel matrix and the pres
 * [ProSense pressure transmitter, 0 to 200 psig range, 0-10 VDC analog output, 14 to 36 VDC operating voltage](https://www.automationdirect.com/adc/Shopping/Catalog/Process_Control_-a-_Measurement/Pressure_Sensors/Pressure_Transmitters/Stainless_Steel_Sensing_Element_-_DIN_Connector/SPT25-10-0200D)
 * [Pololu 5V, 5A Step-Down Voltage Regulator D24V50F5](https://www.pololu.com/product/2851)
 * [74AHCT125 - Quad Level-Shifter (3V to 5V)](https://www.adafruit.com/product/1787)
+* [Integra P6063C Enclosure](https://www.automationdirect.com/adc/Shopping/Catalog/Enclosures_-z-_Subpanels_-z-_Thermal_Management_-z-_Lighting/Enclosures/Padlocking_Enclosures/P6063C)
