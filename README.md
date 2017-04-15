@@ -30,9 +30,12 @@ S1_UPDATE_INTERVAL 40013 // retained
 S1_FILTER_WEIGHT   40015 // retained
 S1_PSIG_RAW        40017
 S1_PSIG_OFFSET     40019
-S1_PSIG            40021
+S1_PSIG            40021 // retained
 S2_R               40023
 S2_G               40025
 S2_B               40027
 S0_STORE_CONFIG    40029
 ```
+Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to retain those settings across power cycles.
+
+## Design Notes
