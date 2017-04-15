@@ -18,7 +18,8 @@ For under $100 the stack light can be replaced by a Neopixel matrix and the pres
 * [Standoffs](https://www.adafruit.com/product/3299)
 * 3D printed sub-panel and mount
 
-## MODBUS Address Map
+## MODBUS
+### Address Map
 ```
 S0_CurrentMillis   40001 // modpoll -m tcp -t 4:float -r 40001 [ip_addr]
 S0_RSSI            40003
@@ -36,7 +37,16 @@ S2_G               40025
 S2_B               40027
 S0_STORE_CONFIG    40029
 ```
+### Retained Storage 
 Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
+
+### Operating Modes
+Set S0_MODE to one of the following operating modes, the default is 0.
+
+#### Automatic (power up default)
+In automatic, if the pressure is below S0_THRESH_IDLE it is assumed the compressed air system is idle and the matrix displays a low intensity blue. If the pressure is between S0_THRESH_IDLE and S0_THRESH_LOW the matrix flashes red. Between S0_THRESH_LOW and S0_THRESH_HIGH a solid green is display. If the pressure is above S0_THRESH_HIGH it displays a flashing amber.
+
+### All Off
 
 ## Diffusers
 The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside.
