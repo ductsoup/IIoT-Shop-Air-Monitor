@@ -17,6 +17,7 @@ For under $100 the stack light can be replaced by a Neopixel matrix and the pres
 * [Integra P6063C Enclosure](https://www.automationdirect.com/adc/Shopping/Catalog/Enclosures_-z-_Subpanels_-z-_Thermal_Management_-z-_Lighting/Enclosures/Padlocking_Enclosures/P6063C)
 
 ## MODBUS Address Map
+```
 S0_CurrentMillis   40001 // modpoll -m tcp -t 4:float -r 40001 [ip_addr]
 S0_RSSI            40003
 S0_MODE            40005
@@ -32,3 +33,4 @@ S2_R               40023
 S2_G               40025
 S2_B               40027
 S0_STORE_CONFIG    40029
+```
