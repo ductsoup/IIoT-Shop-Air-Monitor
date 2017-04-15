@@ -43,10 +43,18 @@ Write the desired values to the retained register then write 255 to S0_STORE_CON
 ### Operating Modes
 Set S0_MODE to one of the following operating modes, the default is 0.
 
-#### Automatic (power up default)
+#### 0x00 Automatic (power up default)
 In automatic, if the pressure is below S0_THRESH_IDLE it is assumed the compressed air system is idle and the matrix displays a low intensity blue. If the pressure is between S0_THRESH_IDLE and S0_THRESH_LOW the matrix flashes red. Between S0_THRESH_LOW and S0_THRESH_HIGH a solid green is display. If the pressure is above S0_THRESH_HIGH it displays a flashing amber.
 
-### All Off
+#### 0x01 All Off
+
+#### 0x02 All on at a preset color
+Set S2_R, S2_G and S2_B to the desired color.
+
+#### 0x03 Pulse at a preset color
+Set S2_R, S2_G and S2_B to the desired color.
+
+#### 0x04 Rainbow test pattern
 
 ## Diffusers
 The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside.
