@@ -39,7 +39,7 @@ S0_STORE_CONFIG    40029
 Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
 
 ## Diffusers
-The Neopixel matrix is very bright but directional. 
+The Neopixel matrix is very bright but also very directional. To disperse the light add a diffuser. There are two styles; one that fits inside the enclosure and another mounted outside.
 
 ![alt text](/images/diffuser1.jpg)
 ![alt text](/images/diffuser4.jpg)
