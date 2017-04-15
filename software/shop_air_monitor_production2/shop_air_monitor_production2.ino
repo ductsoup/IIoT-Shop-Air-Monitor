@@ -48,7 +48,7 @@ char* access_points[][2] = {
 #define S1_UPDATE_INTERVAL 40013 // retained
 #define S1_FILTER_WEIGHT   40015 // retained
 #define S1_PSIG_RAW        40017
-#define S1_PSIG_OFFSET     40019
+#define S1_PSIG_OFFSET     40019 // retained
 #define S1_PSIG            40021
 #define S2_R               40023
 #define S2_G               40025
