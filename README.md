@@ -39,7 +39,14 @@ S0_STORE_CONFIG    40029
 Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
 
 ## Diffusers
-The Neopixel matrix is very bright but also very directional. To disperse the light add a diffuser. There are two styles; one that fits inside the enclosure and another mounted outside.
+The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside.
 
 ![alt text](/images/diffuser1.jpg)
 ![alt text](/images/diffuser4.jpg)
+
+## Design Notes
+### Power
+Industrial sensors typically require 24VDC, microcontrollers 5 or 3.3VDC. The Neopixel matrix could demand up to 4A at 5VDC so we have to start with a 24VDC then use the Pololu regulator to step down to 5V.
+
+### Level Shifting
+While powered from 5V the Feather's GPIO operates at 3.3V. In order for it to reliably communicate with the 5V Neopixel matrix we have to add the 74AHCT125 to shift the logic levels.
