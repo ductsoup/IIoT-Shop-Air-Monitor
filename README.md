@@ -77,5 +77,5 @@ While powered from 5V the Feather's GPIO operates at 3.3V. In order for it to re
 A simple 3:1 voltage divider protects the Feather's analog input by reducing 10V to 3.3V.
 
 ## Credits
-[cmaglie/FlashStorage](https://github.com/cmaglie/FlashStorage)
+Thanks to [cmaglie/FlashStorage](https://github.com/cmaglie/FlashStorage) for a very handy chunk of code.
 
