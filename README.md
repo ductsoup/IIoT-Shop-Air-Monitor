@@ -33,8 +33,8 @@ S0_THRESH_HIGH     40011 // retained
 S1_UPDATE_INTERVAL 40013 // retained
 S1_FILTER_WEIGHT   40015 // retained
 S1_PSIG_RAW        40017
-S1_PSIG_OFFSET     40019
-S1_PSIG            40021 // retained
+S1_PSIG_OFFSET     40019 // retained
+S1_PSIG            40021 
 S2_R               40023
 S2_G               40025
 S2_B               40027
@@ -79,5 +79,5 @@ While powered from 5V the Feather's GPIO operates at 3.3V. In order for it to re
 A simple 3:1 voltage divider protects the Feather's analog input by reducing 10V to 3.3V.
 
 ## Credits
-Thanks to [cmaglie/FlashStorage](https://github.com/cmaglie/FlashStorage) for a very handy chunk of code.
+Thanks to [cmaglie/FlashStorage](https://github.com/cmaglie/FlashStorage) for sharing a very clever chunk of code.
 
