@@ -43,6 +43,12 @@ S0_STORE_CONFIG    40029
 ### Retained Storage 
 Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles. As noted in the credits below, values are not retained across firmware updates.
 
+### Smoothing
+S1_PSIG_RAW is the raw output from the sensor. S1_PSIG is smoothed by S1_FILTER_WEIGHT and S1_UPDATE_INTERVAL. 
+
+### Sensor Calibration
+Set S1_PSIG_OFFSET to 0, S1_UPDATE_INTERVAL to 1000 and S1_FILTER_WEIGHT to 900 then note the value of S1_PSIG after 15 minutes. Set S1_PSIG_OFFSET to the inverse of the noted value and use S0_STORE_CONFIG to store.
+
 ### Operating Modes
 Set S0_MODE to one of the following operating modes, the default is 0.
 
