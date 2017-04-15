@@ -15,6 +15,8 @@ For under $100 the stack light can be replaced by a Neopixel matrix and the pres
 * [Pololu 5V, 5A Step-Down Voltage Regulator D24V50F5](https://www.pololu.com/product/2851)
 * [74AHCT125 - Quad Level-Shifter (3V to 5V)](https://www.adafruit.com/product/1787)
 * [Integra P6063C Enclosure](https://www.automationdirect.com/adc/Shopping/Catalog/Enclosures_-z-_Subpanels_-z-_Thermal_Management_-z-_Lighting/Enclosures/Padlocking_Enclosures/P6063C)
+* [Standoffs](https://www.adafruit.com/product/3299)
+* 3D printed sub-panel and mount
 
 ## MODBUS Address Map
 ```
