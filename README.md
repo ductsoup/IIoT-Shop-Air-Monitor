@@ -41,7 +41,7 @@ S2_B               40027
 S0_STORE_CONFIG    40029
 ```
 ### Retained Storage 
-Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles.
+Write the desired values to the retained register then write 255 to S0_STORE_CONFIG to save those settings across power cycles. As noted in the credits below, values are not retained across firmware updates.
 
 ### Operating Modes
 Set S0_MODE to one of the following operating modes, the default is 0.
@@ -62,7 +62,7 @@ Set S2_R, S2_G and S2_B to the desired color.
 Continuously cycle the matrix through a color wheel.
 
 ## Diffusers
-The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside.
+The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside. APLA Natural works well, t-glase is also an option.
 
 ![alt text](/images/diffuser1.jpg)
 ![alt text](/images/diffuser4.jpg)
