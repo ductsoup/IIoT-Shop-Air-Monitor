@@ -68,6 +68,8 @@ The Neopixel matrix is very bright but also directional. To disperse the light a
 ![alt text](/images/diffuser4.jpg)
 
 ## Design Notes
+![alt text](/schematic/shopair_simple_bb.jpg)
+
 ### Power
 Industrial sensors typically require 24VDC, microcontrollers 5 or 3.3VDC. The Neopixel matrix could demand up to 4A at 5VDC so we have to start with a 24VDC then use the Pololu regulator to step down to 5V.
 
