@@ -6,7 +6,7 @@ Typically you'd use a simple pressure switch and a stacklight for a visual indic
 
 For under $100 the stack light can be replaced by a Neopixel matrix and the pressure switch with a 0-10V pressure transducer.  A WiFi capable Arduino style microcontroller adds the ability to report to a MODBUS TCP master or an MQTT broker (left as an exercise for the reader).
 
-While configured for a 0-10V analog sensor, this design can also be used as a simple visual signaling device.
+While configured to accept a 0-10V analog sensor, this design can also be used as a simple visual signaling device.
 
 ![alt text](/images/assembled.jpg)
 
