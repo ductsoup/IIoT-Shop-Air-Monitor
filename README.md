@@ -6,6 +6,8 @@ Typically you'd use a simple pressure switch and a stacklight for a visual indic
 
 For under $100 the stack light can be replaced by a Neopixel matrix and the pressure switch with a 0-10V pressure transducer.  A WiFi capable Arduino style microcontroller adds the ability to report to a MODBUS TCP master or an MQTT broker (exercise for the reader).
 
+While configured for a 0-10V analog sensor, this design can also be used as a visual signaling device.
+
 ![alt text](/images/assembled.jpg)
 
 ## Bill of Materials
@@ -17,6 +19,7 @@ For under $100 the stack light can be replaced by a Neopixel matrix and the pres
 * [Integra P6063C Enclosure](https://www.automationdirect.com/adc/Shopping/Catalog/Enclosures_-z-_Subpanels_-z-_Thermal_Management_-z-_Lighting/Enclosures/Padlocking_Enclosures/P6063C)
 * [Standoffs](https://www.adafruit.com/product/3299)
 * 3D printed sub-panel and mount
+* 24V, 5A power supply
 
 ## MODBUS
 ### Address Map
@@ -47,6 +50,7 @@ Set S0_MODE to one of the following operating modes, the default is 0.
 In automatic, if the pressure is below S0_THRESH_IDLE it is assumed the compressed air system is idle and the matrix displays a low intensity blue. If the pressure is between S0_THRESH_IDLE and S0_THRESH_LOW the matrix flashes red. Between S0_THRESH_LOW and S0_THRESH_HIGH a solid green is display. If the pressure is above S0_THRESH_HIGH it displays a flashing amber.
 
 #### 0x01 All Off
+Turn the matrix off.
 
 #### 0x02 All on at a preset color
 Set S2_R, S2_G and S2_B to the desired color.
@@ -54,7 +58,8 @@ Set S2_R, S2_G and S2_B to the desired color.
 #### 0x03 Pulse at a preset color
 Set S2_R, S2_G and S2_B to the desired color.
 
-#### 0x04 Rainbow test pattern
+#### 0x04 Color cycle test pattern
+Continuously cycle the matrix through a color wheel.
 
 ## Diffusers
 The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside.
@@ -68,3 +73,5 @@ Industrial sensors typically require 24VDC, microcontrollers 5 or 3.3VDC. The Ne
 
 ### Level Shifting
 While powered from 5V the Feather's GPIO operates at 3.3V. In order for it to reliably communicate with the 5V Neopixel matrix we have to incorporate a 74AHCT125 to shift the logic levels.
+
+A simple 3:1 voltage divider protects the Feather's analog input by reducing 10V to 3.3V.
