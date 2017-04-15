@@ -4,9 +4,9 @@ An inexpensive, IIoT connected alternative to traditional industrial stack light
 ## Overview
 Typically you'd use a simple pressure switch and a stacklight for a visual indication of the shop air pressure status. The cost is over $500 per unit. That offended me so I looked into more capable alternatives.
 
-For under $100 the stack light can be replaced by a Neopixel matrix and the pressure switch with a 0-10V pressure transducer.  A WiFi capable Arduino style microcontroller adds the ability to report to a MODBUS TCP master or an MQTT broker (exercise for the reader).
+For under $100 the stack light can be replaced by a Neopixel matrix and the pressure switch with a 0-10V pressure transducer.  A WiFi capable Arduino style microcontroller adds the ability to report to a MODBUS TCP master or an MQTT broker (left as an exercise for the reader).
 
-While configured for a 0-10V analog sensor, this design can also be used as a visual signaling device.
+While configured for a 0-10V analog sensor, this design can also be used as a simple visual signaling device.
 
 ![alt text](/images/assembled.jpg)
 
