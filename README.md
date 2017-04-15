@@ -68,7 +68,7 @@ Set S2_R, S2_G and S2_B to the desired color.
 Continuously cycle the matrix through a color wheel.
 
 ## Diffusers
-The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix the enclosure and another mounted outside. APLA Natural works well, t-glase is also an option.
+The Neopixel matrix is very bright but also directional. To disperse the light add an optional diffuser. There are two styles; one that fits inside over the LED matrix and another attached to the enclosure. APLA Natural works well, t-glase is also an option.
 
 ![alt text](/images/diffuser1.jpg)
 ![alt text](/images/diffuser4.jpg)
